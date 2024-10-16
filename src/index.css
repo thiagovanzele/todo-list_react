@@ -38,6 +38,10 @@ li:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+li span {
+    cursor: pointer;
+}
+
 button {
     background-color: #4cb85c;
     color: #FFF;
