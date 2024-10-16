@@ -2,6 +2,10 @@ import React from "react";
 import Task from "./Task";
 
 const TaskList = ({ tasks, onDeleteTask, onToggleTaskDone }) => {
+  if (tasks.length === 0) {
+    return <div className="sem-tarefas">Não há tarefas para mostrar...</div>;
+  }
+
   return (
     <ul>
       {tasks.map((task) => (
